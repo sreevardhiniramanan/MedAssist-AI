@@ -1,0 +1,452 @@
+/* ===============================
+   GOOGLE FONT
+================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===============================
+   RESET
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f8fc;
+    color:#222;
+}
+
+/* ===============================
+   NAVBAR
+================================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:white;
+
+    position:sticky;
+    top:0;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#0b6efd;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:#222;
+
+    font-weight:500;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+
+    color:#0b6efd;
+
+}
+
+.login-btn{
+
+    text-decoration:none;
+
+    background:#0b6efd;
+
+    color:white;
+
+    padding:10px 24px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#084298;
+
+}
+
+/* ===============================
+   HERO SECTION
+================================== */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:70px 8%;
+
+    gap:50px;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h1{
+
+    font-size:55px;
+
+    color:#0b2545;
+
+    margin-bottom:25px;
+
+    line-height:1.2;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.primary-btn{
+
+    background:#0b6efd;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    background:white;
+
+    color:#0b6efd;
+
+    border:2px solid #0b6efd;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.secondary-btn:hover{
+
+    background:#0b6efd;
+
+    color:white;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.hero-image img{
+
+    width:90%;
+
+    max-width:500px;
+
+}
+/* ===============================
+   FEATURES SECTION
+================================== */
+
+.features{
+    padding:80px 8%;
+    background:#ffffff;
+}
+
+.features h2{
+    text-align:center;
+    font-size:40px;
+    color:#0b2545;
+    margin-bottom:50px;
+}
+
+.feature-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#0b6efd;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#0b2545;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+
+/* ===============================
+   FOOTER
+================================== */
+
+footer{
+
+    background:#0b2545;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:15px;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.nav-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+}
+/* ===============================
+   STATISTICS SECTION
+================================== */
+
+.stats{
+
+    padding:80px 8%;
+    background:#eef5ff;
+    text-align:center;
+
+}
+
+.stats h2{
+
+    font-size:40px;
+    color:#0b2545;
+    margin-bottom:50px;
+
+}
+
+.stats-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+
+}
+
+.stat-card{
+
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stat-card h1{
+
+    color:#0b6efd;
+    font-size:48px;
+    margin-bottom:15px;
+
+}
+
+.stat-card p{
+
+    font-size:18px;
+    color:#555;
+
+}
